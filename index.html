@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>TICINO Dataset</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -135,22 +135,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -160,7 +144,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+Multi-modal remote sensing (RS) involves the fusion of data from multiple sensors, such as RGB, Multispectral, Hyperspectral, Light Detection and Ranging, Synthetic Aperture Radar, etc., each capturing unique information across different regions of the electromagnetic spectrum. The fusion of different modalities can provide complementary information, allowing for a comprehensive understanding of the Earth’s surface.
+Multi-modal RS image segmentation leverages various RS modalities to achieve pixel-level semantics classification. While deep learning has demonstrated promise in this domain, the limited availability of labeled multi-modal data poses a constraint on leveraging data-intensive techniques like deep learning to their full potential. To address this gap, we present Ticino, a novel multi-modal remote sensing dataset tailored for semantic segmentation.
+Ticino includes five modalities, including RGB, Digital Terrain Model, Panchromatic, and Hyperspectral images within the visual-near and short-wave infrared spectrum. Specifically annotated for Land Cover and Soil Agricultural Use, the dataset serves as a valuable resource for researchers in the field. Additionally, we conduct a comparative analysis, comparing single-modality with multi-modality deep learning techniques and evaluating the effectiveness of early fusion versus middle fusion approaches.
+This work aims to facilitate future research efforts in the domain by providing a robust benchmark dataset and insights into the effectiveness of various segmentation approaches.
           </p>
         </div>
       </div>
@@ -212,64 +199,6 @@
 
 
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
@@ -290,7 +219,15 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{barbato2024ticino,
+        title={Ticino: A multi-modal remote sensing dataset for semantic segmentation},
+        author={Barbato, Mirko Paolo and Piccoli, Flavio and Napoletano, Paolo},
+        journal={Expert Systems with Applications},
+        volume={249},
+        pages={123600},
+        year={2024},
+        publisher={Elsevier}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
